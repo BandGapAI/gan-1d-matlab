@@ -1,6 +1,6 @@
 %Theta=grad2d_B(K,step,NS,c,a,b,g,h,no_plot)
 % 2D version of gradient descent/ascent experiment for 1-D analytic LS-GAN with exponential data Exp(c)
-% Rayleigh latent variable z, square law generator xhat=gz+h
+% Rayleigh latent variable z, square law generator xhat=gz^2+h
 % discriminator D(x)=(1+erf(ax+b))/2
 % The optimisation is over b & h.
 %
@@ -27,8 +27,8 @@
 % Licence is granted to use, modify and distribute this code for non-commercial purposes provided that the original author's name 
 % is referenced in any modified versions and in any supporting documentation.
 % The following citation should be used for referencing this code:
-% G. W. Pulford, Matlab code for "Convergence and Optimality Analysis of Low-Dimensional Generative AdversarialNetworks Using Error Function Integrals,"
-% pp. 165366 - 165384, Dec. 2021, IEEE Access.
+% G. W. Pulford, Matlab code for "Convergence and Optimality Analysis of Low-Dimensional Generative Adversarial Networks Using Error Function Integrals",
+% available from https://github.com/BandGapAI/gan-1d-least-squares.
 
 function Theta=grad2d_B(varargin)
 if nargin==0

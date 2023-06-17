@@ -1,7 +1,7 @@
 %[dJ1da,dJ1db,dJ2da,dJ2db,dJ2dg,dJ2dh,[J1],[J2]]=derivative1(a,b,c,g,h,NS,[debug])
 %
 % Compute the first derivatives (gradients) of a 1-D Least Squares GAN analytic model with latent variable z~Rayleigh,
-% square law generator xhat=G(z)=gz+h (parameters g>0, h) (resulting in an exponentially distributed generator output)
+% square law generator xhat=G(z)=gz^2+h (parameters g>0, h) (resulting in an exponentially distributed generator output)
 % D(x)=(1+erf(ax+b))/2 discriminator (parameters a>0, b) and exponential data with parameter c>0: p_X(x)=c exp(-cx), x>=0
 %
 % The Cost function is decomposed as J(D,G)=J1(D)+J2(D,G)
@@ -24,8 +24,8 @@
 % Licence is granted to use, modify and distribute this code for non-commercial purposes provided that the original author's name 
 % is referenced in any modified versions and in any supporting documentation.
 % The following citation should be used for referencing this code:
-% G. W. Pulford, Matlab code for "Convergence and Optimality Analysis of Low-Dimensional Generative AdversarialNetworks Using Error Function Integrals,"
-% pp. 165366 - 165384, Dec. 2021, IEEE Access.
+% G. W. Pulford, Matlab code for "Convergence and Optimality Analysis of Low-Dimensional Generative Adversarial Networks Using Error Function Integrals",
+% available from https://github.com/BandGapAI/gan-1d-least-squares.
 
 function [dJ1da,dJ1db,dJ2da,dJ2db,dJ2dg,dJ2dh,varargout]=derivative1(a,b,c,g,h,NS,varargin)
 if nargin==6
