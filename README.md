@@ -10,7 +10,7 @@ The 1-D LS-GAN is of the R/S/E/E type, which means that:
 
 Note that the Rayleigh & exponential PDFs used above are slighlty different from the standard definitions.
 
-The code supplies the function value and gradients of the 1-D LS-GAN cost (loss) function for the quasi-analytical method based on known error function integrals that are computed via a key integral (integral8tilde_mc). The key integral is the integral from 0 to infinity of the function $\text{erf}(\alpha x+\beta) \cdot \text{Normal}(x,m,s)$ with respect to $x$, which must be evaluated numerically but is accurate to around 3 decimal places using 1-D Monte Carlo integration with 5E+06 samples. The MC integration is the only source of randomness in the analytical method, which is otherwise deterministic, hence the terminology "quasi-analytical".
+The code supplies the function value and gradients of the 1-D LS-GAN cost (loss) function for the quasi-analytical method based on known error function integrals that are computed via a key integral (integral8tilde_mc). The key integral is the integral from 0 to infinity of the function $\text{erf}(\alpha x+\beta) \cdot \text{Normal}(x,m,s)$ with respect to $x$, which is in the interval [-1,1], and must be evaluated numerically but is accurate to around 3 decimal places using 1-D Monte Carlo integration with 5E+06 samples. The MC integration is the only source of randomness in the analytical method, which is otherwise deterministic, hence the terminology "quasi-analytical".
 
 Specifically, 
 
