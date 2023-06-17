@@ -6,7 +6,7 @@ The 1-D LS-GAN is of the R/S/E/E type, which means that:
 1. the latent variable z is Rayleigh distributed with PDF $p_Z(z)= 2z \exp(-z^2), z \ge 0$;
 2. the generator is a square law $\hat x = G(z) = gz^2+h$  with real parameters $g>0, h$, resulting in an exponentially distributed generator output;
 3. the discriminator is based on the error function $\text{erf}(x)$, specifically $D(x)=(1+\text{erf}(ax+b))/2$ with real parameters $a>0, b$;
-4. the data are exponentially distributed with parameter $c>0: p_X(x)=c exp(-cx), x \ge 0$.
+4. the data are exponentially distributed with parameter $c>0: p_X(x)=c \exp(-cx), x \ge 0$.
 
 Note that the Rayleigh & exponential PDFs used above are slighlty different from the standard definitions.
 
@@ -15,14 +15,17 @@ The code supplies the function value and gradients of the 1-D LS-GAN cost (loss)
 Specifically, 
 
 grad2d_A: generates top two plots of Fig 1 in paper;
+
 grad4d_A: generates bottom two plots of Fig 1 in paper;
+
 grad2d_B: generates top two plots of Fig 5 in paper;
+
 grad4d_B: generates bottom two plots of Fig 5 in paper.
 
 The scripts save the truth data to Jbh.mat, used to generate Figs 10 & 11 in the paper, however the surface plotting functions are not included.
 
 Licence is granted to use, modify and distribute this code for non-commercial purposes provided that the original author's name is referenced in any modified versions and in any supporting documentation. The following citation should be used for referencing this code:
 
-G. W. Pulford, Matlab code for "Convergence and Optimality Analysis of Low-Dimensional Generative Adversarial Networks Using Error Function Integrals", available from https://github.com/BandGapAI/gan-1d-least-squares.
+G. W. Pulford, Matlab code for "Convergence and Optimality Analysis of Low-Dimensional Generative Adversarial Networks Using Error Function Integrals", available from https://github.com/BandGapAI/gan-1d-matlab.
 
 Copyright 2020 - 2023 Graham Pulford
