@@ -7,12 +7,12 @@
 % Example
 %I2 = integral_IE2(2,-0.5,1,1e6)
 
-% Copyright 2020 - 2023 Graham Pulford
+% Copyright 2020 - 2025 Graham Pulford
 % Licence is granted to use, modify and distribute this code for non-commercial purposes provided that the original author's name 
 % is referenced in any modified versions and in any supporting documentation.
 % The following citation should be used for referencing this code:
 % G. W. Pulford, Matlab code for "Convergence and Optimality Analysis of Low-Dimensional Generative Adversarial Networks Using Error Function Integrals",
-% available from https://github.com/BandGapAI/gan-1d-least-squares.
+% available from https://github.com/BandGapAI/gan-1d-matlab.
 
 function I2 = integral_IE2(a,b,c,NS,varargin)
 if isnan(a) || isnan(b) || isnan(c)

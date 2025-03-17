@@ -20,12 +20,12 @@
 %[dJ1da,dJ1db,dJ2da,dJ2db,dJ2dg,dJ2dh,J1,J2]=derivative1(1,-2.8,2.5,1,-4,1e6)
 %[dJ1da,dJ1db,dJ2da,dJ2db,dJ2dg,dJ2dh,J1,J2]=derivative1(1,-2.8,2.5,1,-4,1e6,1) % with debug output
 
-% Copyright 2020 - 2023 Graham Pulford
+% Copyright 2020 - 2025 Graham Pulford
 % Licence is granted to use, modify and distribute this code for non-commercial purposes provided that the original author's name 
 % is referenced in any modified versions and in any supporting documentation.
 % The following citation should be used for referencing this code:
 % G. W. Pulford, Matlab code for "Convergence and Optimality Analysis of Low-Dimensional Generative Adversarial Networks Using Error Function Integrals",
-% available from https://github.com/BandGapAI/gan-1d-least-squares.
+% available from https://github.com/BandGapAI/gan-1d-matlab.
 
 function [dJ1da,dJ1db,dJ2da,dJ2db,dJ2dg,dJ2dh,varargout]=derivative1(a,b,c,g,h,NS,varargin)
 if nargin==6

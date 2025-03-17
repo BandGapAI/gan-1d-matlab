@@ -6,12 +6,12 @@
 % Example
 %I10 = integral10(1,-1.5,2,1e6,1)
 
-% Copyright 2020 - 2023 Graham Pulford
+% Copyright 2020 - 2025 Graham Pulford
 % Licence is granted to use, modify and distribute this code for non-commercial purposes provided that the original author's name 
 % is referenced in any modified versions and in any supporting documentation.
 % The following citation should be used for referencing this code:
 % G. W. Pulford, Matlab code for "Convergence and Optimality Analysis of Low-Dimensional Generative Adversarial Networks Using Error Function Integrals",
-% available from https://github.com/BandGapAI/gan-1d-least-squares.
+% available from https://github.com/BandGapAI/gan-1d-matlab.
 
 function I10 = integral10(a,b,c,varargin)
 if isnan(a) || isnan(b) || isnan(c)
